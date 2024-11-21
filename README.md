@@ -26,6 +26,7 @@ Bots-Automation is a modular and extensible automation bot built with Python and
 
 ## 📂 **Project Structure**
 
+``` 
 Bots-Automation/
 ├── src/
 │   ├── bot.py                 # Main bot script
@@ -45,9 +46,10 @@ Bots-Automation/
 ├── Dockerfile                 # Docker container setup
 ├── requirements.txt           # Project dependencies
 └── README.md                  # Project documentation
+```
 
 
----
+
 
 ## ⚙️ **Installation**
 1. Clone the repository:
@@ -59,20 +61,23 @@ Bots-Automation/
  
 ### Set up a virtual environment:
 
-```python -m venv venv
+```
+python -m venv venv
 source venv/bin/activate   # Linux/macOS
 .\venv\Scripts\activate    # Windows
 ```
 ### Install dependencies:
 
-``` pip install -r requirements.txt
+```
+pip install -r requirements.txt
 ```
 
 ### Configure the .env file:
 
 ### Create a .env file in the project root with the following variables:
 
-   ``` DISCORD_TOKEN=your_discord_token
+   ```
+DISCORD_TOKEN=your_discord_token
     PREFIX=!
 ```
 ### Run the bot:
@@ -84,19 +89,23 @@ source venv/bin/activate   # Linux/macOS
 
 Run the automated test suite to ensure the bot functions correctly:
 
+```
 pytest src/test/
+```
 
 ### 📘 Usage
 Main Commands:
 
-   ``` !add_task [task]: Adds a new task.
+   ``` 
+    !add_task [task]: Adds a new task.
     !list_tasks: Displays all pending tasks.
     !delete_task [id]: Removes a specific task.
     !reminder [message] [time]: Sets a custom reminder.
 ```
 ### Example:
 
-``` !add_task "Study Python"
+```
+    !add_task "Study Python"
     !reminder "Team meeting" in 15m
 ```
 ### 🌟 Planned Enhancements
